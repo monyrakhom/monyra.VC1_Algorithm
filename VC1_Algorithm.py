@@ -3,11 +3,11 @@ import random
 windows = tk.Tk()
 windows.title('Game Snake')
 # 
-# @Row Is the number of cells in the high direction
-# @Column Is the number of cells in the rectangle up
-# @Unit_size Is the side length of a single unit
-# @Height Is the overall height
-# @Width Is the overall length
+# Row Is the number of cells in the high direction
+# Column Is the number of cells in the rectangle up
+# Unit_size Is the side length of a single unit
+# Height Is the overall height
+# Width Is the overall length
 #
 global Row, Column
 Row = 25
@@ -171,7 +171,7 @@ canvas.pack()
 str_score = tk.StringVar()
 score_label = tk.Label(windows, textvariable = str_score, font = ('Regular script', 20), width = 15, height = 1)
 str_score.set('Your Score:' + str(Score))
-score_label.place(x = 80, y = Height)
+score_label.place(x = 50, y = Height)
 put_a_background(canvas)
 draw_the_snake(canvas, snakeList)
 
